@@ -3,10 +3,6 @@ var Discord = require('discordie')
 const Events = Discord.Events
 const Client = new Discord()
 
-Client.connect({
-    token: process.env.BOT_ID
-})
-
 function on_message_recieved(e)
 {
     var message = e.message.content.toLowerCase()
@@ -33,3 +29,5 @@ function on_message_recieved(e)
 }
 
 Client.Dispatcher.on(Events.MESSAGE_CREATE, on_message_recieved)
+
+Client.login(process.env.BOT_TOKEN)
