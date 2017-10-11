@@ -1,0 +1,13 @@
+{
+    "name": "botmccaffery",
+    "description": "Bot McCaffery",
+    "authors": "gmisail",
+    "version": "1.0.0",
+    "main": "bm.js",
+    "scripts": {
+        "start": "node bm.js"
+    },
+    "dependencies": {
+        "discordie": "0.11.0"
+    }
+}
