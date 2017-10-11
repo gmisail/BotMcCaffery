@@ -4,7 +4,7 @@ const Events = Discord.Events
 const Client = new Discord()
 
 Client.connect({
-    token: 'MzY3Nzk4NjM5MDk3MTUxNDk4.DMAq2A.8i5ce1mOjoag24i0TslZK0ZrMMg'
+    token: process.env.BOT_ID
 })
 
 function on_message_recieved(e)
