@@ -2,12 +2,19 @@ var Discord = require('discord.js')
 
 const Client = new Discord.Client()
 
+var pester_david = false
+
+function send_text_to_speech(message_event, text)
+{
+    message_event.reply(text, {tts: true})
+}
+
 function on_message_recieved(e)
 {
     var message = e.content.toLowerCase()
     if(message == "never gonna")
     {
-        e.reply("give you up, never gonna let you down, Never gonna run around and desert you, Never gonna make you cry, never gonna say goodbye, Never gonna tell a lie and hurt you", {tts: true})
+        send_text_to_speech(e, "give you up, never gonna let you down, Never gonna run around and desert you, Never gonna make you cry, never gonna say goodbye, Never gonna tell a lie and hurt you")
     }
     else if(message == "hey now")
     {
@@ -24,6 +31,13 @@ function on_message_recieved(e)
     else if(message == "where is my money?")
     {
         e.reply(":flag_gr: :flag_gr: :flag_gr: :flag_gr: :flag_gr: :flag_gr: :flag_gr: :flag_gr: :flag_gr: :flag_gr: ")
+    }
+    else if(message == "toggle david")
+    {
+        if(message.author.id == "8601")
+        {
+            e.reply("David Stop.")
+        }
     }
 }
 
