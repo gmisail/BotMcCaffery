@@ -34,7 +34,7 @@ function on_message_recieved(e)
     }
     else if(message == "toggle david")
     {
-        if(message.author.id == "8601")
+        if(e.author.id == "8601")
         {
             e.reply("David Stop.")
         }
