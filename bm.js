@@ -32,13 +32,7 @@ function on_message_recieved(e)
     {
         e.reply(":flag_gr: :flag_gr: :flag_gr: :flag_gr: :flag_gr: :flag_gr: :flag_gr: :flag_gr: :flag_gr: :flag_gr: ")
     }
-    else if(message == "toggle david")
-    {
-        if(e.author.id == "8601")
-        {
-            e.reply("David Stop.")
-        }
-    }
+   
 }
 
 Client.on('message', on_message_recieved)
