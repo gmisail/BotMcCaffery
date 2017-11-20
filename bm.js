@@ -23,7 +23,7 @@ function on_message_recieved(e)
     }
     else if(message == "rick")
     {
-        e.reply("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        e.reply("!play https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     }
     else if(message == "$400")
     {
