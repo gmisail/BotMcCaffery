@@ -4,4 +4,4 @@ const d20 = require('./bot/commands/d20');
 
 bot.start([
     help, d20
-]);
+]);  
