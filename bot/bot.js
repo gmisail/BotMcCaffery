@@ -26,7 +26,7 @@ class Bot
             this.onMessage(message);
         });
 
-        this.client.login(process.env.BOT_TOKEN || "MzY3Nzk4NjM5MDk3MTUxNDk4.DMAq2A.8i5ce1mOjoag24i0TslZK0ZrMMg");
+        this.client.login(process.env.BOT_TOKEN);
     }
 
     split(message)
