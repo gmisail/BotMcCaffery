@@ -9,6 +9,7 @@
     },
     "dependencies": {
         "discord.js": "11.3.2",
-        "combined-stream": "1.0.5"
+        "combined-stream": "1.0.5",
+        "axios": "0.18.0"
     }
 }
