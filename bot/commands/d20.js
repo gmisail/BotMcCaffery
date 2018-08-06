@@ -11,7 +11,7 @@ class D20 extends Command
     {
         super.execute(message, args);
 
-        var response = Math.floor(Math.random() * (20 - 1)) + 1;
+        var response = Math.floor(Math.random() * 20) + 1;
         message.channel.send(response);
     }
 }
